@@ -577,10 +577,20 @@
 \setcounter{secnumdepth}{5}
 \renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\ }
 
-% \renewcommand{\section}{%
-%         \@startsection{section}{2}{0pt}{18pt}{18pt}{\reset@font\normalsize\bfseries}
-% }
-%\titleformat*{\section}{\reset@font\normalsize\bfseries}
+ \renewcommand{\section}{%
+         \@startsection{section}{2}{0pt}{18pt}{18pt}{\reset@font\normalsize\bfseries}
+ }
+ \renewcommand{\subsection}{%
+         \@startsection{subsection}{3}{0pt}{18pt}{18pt}{\reset@font\bfseries}
+ }
+ \renewcommand{\subsubsection}{%
+         \@startsection{subsubsection}{4}{0pt}{18pt}{18pt}{\reset@font\itshape}
+ }
+ \renewcommand{\paragraph}{%
+         \@startsection{paragraph}{5}{0pt}{18pt}{18pt}{\reset@font}
+ }
+
+\titleformat*{\section}{\reset@font\normalsize\bfseries}
 \titleformat{\section}[hang]{\bfseries}{\thesection~}{0pt}{}
 \titlespacing\section{0pt}{1.5\baselineskip}{\baselineskip}
 \titleformat*{\subsection}{\reset@font\normalsize\bfseries}
@@ -589,15 +599,6 @@
 \titlespacing\subsubsection{0pt}{1\baselineskip}{0.5\baselineskip}
 \titleformat*{\paragraph}{\reset@font\normalsize}
 \titlespacing\paragraph{0pt}{1\baselineskip}{0.5\baselineskip}
-% \renewcommand{\subsection}{%
-%         \@startsection{subsection}{3}{0pt}{18pt}{18pt}{\reset@font\bfseries}
-% }
-% \renewcommand{\subsubsection}{%
-%         \@startsection{subsubsection}{4}{0pt}{18pt}{18pt}{\reset@font\itshape}
-% }
-% \renewcommand{\paragraph}{%
-%         \@startsection{paragraph}{5}{0pt}{18pt}{18pt}{\reset@font}
-% }
 
 %==============================================================================
 % Redefinição do formato de citações longas
