@@ -523,7 +523,7 @@
 \def\@chapappextra{}
 \def\@chappositioning{\noindent}
 \def\@chapter[#1]#2{%
-        \xdef\Hy@chapapp{CHAPTER}%
+%        \xdef\Hy@chapapp{CHAPTER}%
         \gdef\theHchapter{\thechapter}%
         \refstepcounter{chapter}%
         \addcontentsline{toc}{chapter}{\@chapapp\thechapter~\@chapappextra#1}%
@@ -544,7 +544,7 @@
         %\par
 }
 \def\@schapter#1{%
-        \xdef\Hy@chapapp{SCHAPTER}%
+       % \xdef\Hy@chapapp{SCHAPTER}%
         \refstepcounter{schapter}%
         \if@aftertoc%
             \hyperdef{SCHAPTER}{\theschapter}{}%
